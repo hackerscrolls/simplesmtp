@@ -13,9 +13,9 @@ https://github.com/corpix/smtpd/blob/master/examples/logging-smtpd/main.go
 
 # Install and Run
 ```
-go get -u github.com/corpix/smtpd
 git clone https://github.com/hackerscrolls/simplesmtp
 cd simplesmtp
+go get -u -v -f all
 go run simplesmtp.go -save -i 0.0.0.0 -p 25
 ```
 
