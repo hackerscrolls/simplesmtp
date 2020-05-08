@@ -48,8 +48,8 @@ func SaveEmail(body []byte, fromAddr string, toAddr string ){
 	rnd := rand.Intn(9999)
 	t := time.Now()
 	timeStamp := t.Format("2006-01-02-15_04_05")
-	fromAddr = strings.ReplaceAll(fromAddr,"@","_")
-	toAddr = strings.ReplaceAll(toAddr,"@","_")
+	fromAddr = strings.Replace(fromAddr,"@","_",-1)
+	toAddr = strings.Replace(toAddr,"@","_",-1)
 
 	filename := fromAddr+"_to_"+toAddr+"_"+timeStamp+"_"+strconv.Itoa(rnd)+".txt"
 
